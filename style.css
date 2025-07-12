@@ -37,7 +37,11 @@
     font-size: 34px;
     color: var(--dark-color);
 }
-
+#menu-icon{
+    font-size: 35px;
+    display: none;
+    margin-right: 10px;
+}
 .nav-item-box {
     width: 70%;
     align-content: end;
@@ -428,4 +432,27 @@ footer {
 }
 #footer-container img{
 border-radius: 2px;
+}
+/* mobile layout  */
+@media screen and (max-width: 480px) {
+    ul li{
+        display: none;
+    }
+#menu-icon{
+display: inline-block;
+}
+.nav-item-box.responsive {position: relative;}
+  .nav-item-box.responsive ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    background-color: var(--lighting-color);
+  }
+  .nav-item-box.responsive ul li{
+    display: block;
+    margin: 20px;
+    text-align: left;
+  }
 }

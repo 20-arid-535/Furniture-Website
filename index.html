@@ -14,7 +14,7 @@
             <div class="logo">
                 Furniture
             </div>
-            <div class="nav-item-box">
+            <div id="myTopnav" class="nav-item-box">
                 <ul class="nav-list">
                     <li><a>Home</a></li>
                     <li><a>Services</a></li>
@@ -22,7 +22,9 @@
                     <li><a>Products</a></li>
                     <li><a>Gallery</a></li>
                 </ul>
+
             </div>
+            <i id="menu-icon" class="fa-solid fa-bars fa-shake" onclick="myFunction()"></i>
         </nav>
     </header>
     <section class="home">
@@ -85,7 +87,7 @@
         <div class="box2-img">
             <div id="bg-circle"></div>
             <img id="person-img" src="images/girl.jpg" alt="girls-image" width="95%" height="100%">
-            
+
         </div>
     </section>
     <section class="products collection">
@@ -126,7 +128,7 @@
                 </div>
                 <p class="work-title">Ships From Warehouse</p>
                 <div class="work-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-       
+
             </div>
             <div>
                 <img class="product-img3" src="images/pimage_3.png" alt="collection-img" width="100%" height="400px">
@@ -135,13 +137,14 @@
                 </div>
                 <p class="work-title">Style Your Room</p>
                 <div class="work-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-       
+
             </div>
         </div>
     </section>
     <section class="contact">
         <div class="contact-title">Join Our Mailing List</div>
-        <div class="contact-subtitle">Sign up to receive inspiration, product updates, and special offers from our team.</div>
+        <div class="contact-subtitle">Sign up to receive inspiration, product updates, and special offers from our team.
+        </div>
         <div id="contact-form">
             <div id="input-box">
                 <input type="text" id="email-input" placeholder="example@gmail.com">
@@ -151,20 +154,32 @@
     </section>
     <footer>
         <div id="box1">
-<p id="text1">Beauty Care</p>
-<p id="text2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-<p id="text3">Follow Us</p>
+            <p id="text1">Beauty Care</p>
+            <p id="text2">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris.</p>
+            <p id="text3">Follow Us</p>
 
         </div>
         <div id="box2">
             <p id="text4">Instagram Shop</p>
             <div id="footer-container">
-<img src="images/fimage_94.png" alt="decor image" width="22%" height="185px">
-<img src="images/fimage_95.png" alt="decor image" width="22%" height="185px">
-<img src="images/fimage_96.png" alt="decor image" width="22%" height="185px">
-<img src="images/fimage_94.png" alt="decor image" width="22%" height="185px">
+                <img src="images/fimage_94.png" alt="decor image" width="22%" height="185px">
+                <img src="images/fimage_95.png" alt="decor image" width="22%" height="185px">
+                <img src="images/fimage_96.png" alt="decor image" width="22%" height="185px">
+                <img src="images/fimage_94.png" alt="decor image" width="22%" height="185px">
             </div>
         </div>
     </footer>
+    <script>function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-item-box") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-item-box";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/977b174986.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
